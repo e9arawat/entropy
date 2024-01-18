@@ -8,4 +8,6 @@ urlpatterns = [
     path('manager_login/', views.manager_login, name="manager_login"),
     path('manager_dashboard', views.manager_dashboard, name='manager_dashboard'),
     path('employee_dashboard', views.employee_dashboard, name='employee_dashboard'),
+    path('update_status/<str:username>/<str:status>/', views.update_status, name='update_status'),
+    path('submit_status/', views.submit_status, name='submit_status'),
 ]

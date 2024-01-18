@@ -11,21 +11,21 @@
         {% if error_message %}
             <p class="text-danger">{{ error_message }}</p>
         {% endif %}
-
+        
         <div class="p-3">
             <div class="border border-dark rounded">
                 <form class="p-3" method="post" action="/manager_login/">
                     {% csrf_token %}
                     <div class="form-group">
-                      <label for="username">Username</label>
-                      <input type="text" class="form-control" id="username" name='username' aria-describedby="emailHelp" placeholder="Enter Username">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" name='username' aria-describedby="emailHelp" placeholder="Enter Username">
                     </div>
                     <div class="form-group">
-                      <label for="password">Password</label>
-                      <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
-                  </form>
+                </form>
             </div>
         </div>
     </div>
